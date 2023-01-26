@@ -19,10 +19,14 @@ experiência => base_experience
 
 EXTRA: se puder ordene por nome.
 */
+import axios from "axios";
+import { useEffect } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+    
+  useEffect(() => {
+    axios.get('https://pokeapi.co/api/v2/pokemon').then(response => console.log)
+  }, []); 
   return (
     <>
       <h3>desafio fernandev</h3>
